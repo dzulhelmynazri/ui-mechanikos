@@ -11,7 +11,7 @@ import { source } from "@/lib/source"
 import { CommandMenu } from "@/components/command-menu"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
-import { ModeSwitcher } from "@/components/mode-switcher"
+// import { ModeSwitcher } from "@/components/mode-switcher"
 // import { SiteConfig } from "@/components/site-config"
 import { Button } from "@/registry/new-york-v4/ui/button"
 
@@ -64,7 +64,7 @@ export function SiteHeader() {
             {/* <Separator orientation="vertical" className="3xl:flex hidden" /> */}
             {/* <SiteConfig className="3xl:flex hidden" /> */}
             {/* <Separator orientation="vertical" /> */}
-            <ModeSwitcher />
+            {/* <ModeSwitcher /> */}
           </div>
         </div>
       </div>
