@@ -9,14 +9,13 @@ import { source } from "@/lib/source"
 // import blocks from "@/registry/__blocks__.json"
 // import { Separator } from "@/registry/new-york-v4/ui/separator"
 import { CommandMenu } from "@/components/command-menu"
+// import { GitHubLink } from "@/components/github-link"
+// import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 // import { ModeSwitcher } from "@/components/mode-switcher"
 // import { SiteConfig } from "@/components/site-config"
 import { Button } from "@/registry/new-york-v4/ui/button"
-
-// import { GitHubLink } from "@/components/github-link"
-// import { Icons } from "@/components/icons"
 
 export function SiteHeader() {
   const colors = getColors()
@@ -33,7 +32,7 @@ export function SiteHeader() {
           />
           <Button asChild variant="ghost" className="flex">
             <Link href="/">
-              {/* <Icons.logo className="size-5" /> */}
+              {/* <Icons.logo className="size-5/> */}
               <Image
                 src={logoDesktop}
                 width={100}
