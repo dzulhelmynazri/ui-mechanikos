@@ -32,7 +32,7 @@ export function SiteHeader() {
           />
           <Button asChild variant="ghost" className="flex">
             <Link href="/">
-              {/* <Icons.logo className="size-5/> */}
+              {/* <Icons.logo className="size-5" /> */}
               <Image
                 src={logoDesktop}
                 width={100}

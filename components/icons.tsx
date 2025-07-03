@@ -4,29 +4,88 @@ type IconProps = React.HTMLAttributes<SVGElement>
 
 export const Icons = {
   logo: (props: IconProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" {...props}>
+    // <svg
+    //   {...props}
+    //   id="Layer_1"
+    //   data-name="Layer 1"
+    //   xmlns="http://www.w3.org/2000/svg"
+    //   viewBox="0 0 198.08 163.88"
+    // >
+    //   <rect width="256" height="256" fill="#0E0E0E;" />
+    //   <path
+    //     d="M99.51,82.6l29.33,80.61c.12.32-.12.67-.47.67h-29.33s-29.33,0-29.33,0c-.34,0-.58-.34-.47-.67l29.33-80.61c.16-.44.77-.44.93,0Z"
+    //     // style="fill: #0E0E0E;"
+    //     fill="#0E0E0E;"
+    //     stroke="currentColor"
+    //     strokeLinecap="round"
+    //     strokeLinejoin="round"
+    //     strokeWidth="32"
+    //   />
+    //   <path
+    //     d="M88.85,81.15L59.69.33c-.16-.44-.78-.44-.93,0L.03,163.21c-.12.32.12.66.47.66h58.45c.21,0,.4-.13.47-.33l29.44-82.07c.04-.11.04-.23,0-.34Z"
+    //     // style="fill: #0E0E0E;"
+    //     fill="#0E0E0E;"
+    //     stroke="currentColor"
+    //     strokeLinecap="round"
+    //     strokeLinejoin="round"
+    //     strokeWidth="32"
+    //   />
+    //   <path
+    //     d="M109.23,81.15L138.38.33c.16-.44.78-.44.93,0l58.73,162.88c.12.32-.12.66-.47.66h-58.45c-.21,0-.4-.13-.47-.33l-29.44-82.07c-.04-.11-.04-.23,0-.34Z"
+    //     // style="fill: #0E0E0E;"
+    //     fill="#0E0E0E;"
+    //     stroke="currentColor"
+    //     strokeLinecap="round"
+    //     strokeLinejoin="round"
+    //     strokeWidth="32"
+    //   />
+    // </svg>
+
+    // <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" {...props}>
+    //   <rect width="256" height="256" fill="none" />
+    //   <line
+    //     x1="208"
+    //     y1="128"
+    //     x2="128"
+    //     y2="208"
+    //     fill="none"
+    //     stroke="currentColor"
+    //     strokeLinecap="round"
+    //     strokeLinejoin="round"
+    //     strokeWidth="32"
+    //   />
+    //   <line
+    //     x1="192"
+    //     y1="40"
+    //     x2="40"
+    //     y2="192"
+    //     fill="none"
+    //     stroke="currentColor"
+    //     strokeLinecap="round"
+    //     strokeLinejoin="round"
+    //     strokeWidth="32"
+    //   />
+    // </svg>
+
+    <svg
+      {...props}
+      id="Layer_1"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 198.08 163.88"
+    >
       <rect width="256" height="256" fill="none" />
-      <line
-        x1="208"
-        y1="128"
-        x2="128"
-        y2="208"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="32"
+      <path
+        d="M99.51,82.6l29.33,80.61c.12.32-.12.67-.47.67h-29.33s-29.33,0-29.33,0c-.34,0-.58-.34-.47-.67l29.33-80.61c.16-.44.77-.44.93,0Z"
+        fill="#0E0E0E;"
       />
-      <line
-        x1="192"
-        y1="40"
-        x2="40"
-        y2="192"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="32"
+      <path
+        d="M88.85,81.15L59.69.33c-.16-.44-.78-.44-.93,0L.03,163.21c-.12.32.12.66.47.66h58.45c.21,0,.4-.13.47-.33l29.44-82.07c.04-.11.04-.23,0-.34Z"
+        fill="#0E0E0E;"
+      />
+      <path
+        d="M109.23,81.15L138.38.33c.16-.44.78-.44.93,0l58.73,162.88c.12.32-.12.66-.47.66h-58.45c-.21,0-.4-.13-.47-.33l-29.44-82.07c-.04-.11-.04-.23,0-.34Z"
+        fill="#0E0E0E;"
       />
     </svg>
   ),
