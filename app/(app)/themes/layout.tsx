@@ -1,16 +1,14 @@
 import { Metadata } from "next"
-
-// import Link from "next/link"
+import Link from "next/link"
 
 // import { Announcement } from "@/components/announcement"
 import {
-  // PageActions,
+  PageActions,
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/page-header"
-
-// import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/new-york-v4/ui/button"
 
 const title = "Pick a Color. Make it yours."
 const description =
@@ -51,14 +49,14 @@ export default function ThemesLayout({
         {/* <Announcement /> */}
         <PageHeaderHeading>{title}</PageHeaderHeading>
         <PageHeaderDescription>{description}</PageHeaderDescription>
-        {/* <PageActions>
+        <PageActions>
           <Button asChild size="sm">
             <a href="#themes">Browse Themes</a>
           </Button>
           <Button asChild variant="ghost" size="sm">
             <Link href="/docs/theming">Documentation</Link>
           </Button>
-        </PageActions> */}
+        </PageActions>
       </PageHeader>
       {children}
     </div>
