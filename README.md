@@ -1,6 +1,6 @@
 # ui-mech
 
-A UI project powered by Next.js + Radix + TailwindCSS + ShadCN. This guide helps you get the project up and running locally.
+A UI project powered by Next.js + Radix UI + TailwindCSS + Shadcn. This guide helps you get the project up and running locally.
 
 ## 🚀 Getting Started
 
