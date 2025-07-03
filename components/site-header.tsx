@@ -3,8 +3,6 @@ import Link from "next/link"
 import { getColors } from "@/lib/colors"
 import { siteConfig } from "@/lib/config"
 import { source } from "@/lib/source"
-// import blocks from "@/registry/__blocks__.json"
-// import { Separator } from "@/registry/new-york-v4/ui/separator"
 import { CommandMenu } from "@/components/command-menu"
 // import { GitHubLink } from "@/components/github-link"
 import { Icons } from "@/components/icons"
@@ -13,6 +11,8 @@ import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
 // import { SiteConfig } from "@/components/site-config"
 import { Button } from "@/registry/new-york-v4/ui/button"
+// import blocks from "@/registry/__blocks__.json"
+import { Separator } from "@/registry/new-york-v4/ui/separator"
 
 export function SiteHeader() {
   const colors = getColors()
@@ -45,7 +45,7 @@ export function SiteHeader() {
             {/* <GitHubLink /> */}
             {/* <Separator orientation="vertical" className="3xl:flex hidden" /> */}
             {/* <SiteConfig className="3xl:flex hidden" /> */}
-            {/* <Separator orientation="vertical" /> */}
+            <Separator orientation="vertical" />
             <ModeSwitcher />
           </div>
         </div>
