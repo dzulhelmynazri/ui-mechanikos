@@ -9,7 +9,7 @@ import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
-// import { SiteConfig } from "@/components/site-config"
+import { SiteConfig } from "@/components/site-config"
 import { Button } from "@/registry/new-york-v4/ui/button"
 // import blocks from "@/registry/__blocks__.json"
 import { Separator } from "@/registry/new-york-v4/ui/separator"
@@ -43,9 +43,9 @@ export function SiteHeader() {
               className="ml-2 hidden lg:block"
             /> */}
             {/* <GitHubLink /> */}
-            {/* <Separator orientation="vertical" className="3xl:flex hidden" /> */}
-            {/* <SiteConfig className="3xl:flex hidden" /> */}
-            <Separator orientation="vertical" />
+            <Separator orientation="vertical" className="3xl:flex hidden" />
+            <SiteConfig className="3xl:flex hidden" />
+            <Separator orientation="vertical" className="hidden lg:block" />
             <ModeSwitcher />
           </div>
         </div>
