@@ -75,28 +75,6 @@ const form = useForm()
 
 ## Installation
 
-<CodeTabs>
-
-<TabsList>
-  <TabsTrigger value="cli">CLI</TabsTrigger>
-  <TabsTrigger value="manual">Manual</TabsTrigger>
-</TabsList>
-<TabsContent value="cli">
-
-<Steps>
-
-### Command
-
-```bash
-npx shadcn@latest add form
-```
-
-</Steps>
-
-</TabsContent>
-
-<TabsContent value="manual">
-
 <Steps>
 
 <Step>Install the following dependencies:</Step>
@@ -112,10 +90,6 @@ npm install @radix-ui/react-label @radix-ui/react-slot react-hook-form @hookform
 <Step>Update the import paths to match your project setup.</Step>
 
 </Steps>
-
-</TabsContent>
-
-</CodeTabs>
 
 ## Usage
 
@@ -236,7 +210,7 @@ That's it. You now have a fully accessible form that is type-safe with client-si
 
 <ComponentPreview
   name="input-form"
-  className="[&_[role=tablist]]:hidden [&>div>div:first-child]:hidden"
+  className="[&>div>div:first-child]:hidden [&_[role=tablist]]:hidden"
 />
 
 </Steps>
