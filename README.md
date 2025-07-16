@@ -1,13 +1,13 @@
 # ui-mech
 
-A UI project powered by Next.js + Radix UI + TailwindCSS + Shadcn. This guide helps you get the project up and running locally.
+A UI project powered by Next.js + Radix UI + TailwindCSS. This guide helps you get the project up and running locally.
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/dzulhelmynazri/ui-mech.git
+git clone https://git.mechanikos.com/ui-mechanikos
 cd ui-mech
 ```
 
