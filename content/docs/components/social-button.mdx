@@ -1,0 +1,86 @@
+---
+title: Social Button
+description: Displays a social button or a component that looks like a button.
+featured: true
+component: true
+---
+
+<ComponentPreview name="social-button-demo" description="A social button" />
+
+## Installation
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="social-button" title="components/ui/social-button.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+## Usage
+
+```tsx
+import { SocialButton } from "@/components/ui/social-button"
+```
+
+```tsx
+<SocialButton social="google" variant="google">Sign in with Google</SocialButton>
+```
+
+## Link
+
+You can use the `asChild` prop to make another component look like a button. Here's an example of a link that looks like a button.
+
+```tsx showLineNumbers
+import { Link } from "next/link"
+
+import { SocialButton } from "@/components/ui/social-button"
+
+export function LinkAsButton() {
+  return (
+    <SocialButton asChild>
+      <Link href="/login">Login</Link>
+    </SocialButton>
+  )
+}
+```
+
+## Examples
+
+### Google social buttons
+
+<ComponentPreview name="social-button-google-demo" description="Google social buttons" />
+
+### Facebook social buttons
+
+<ComponentPreview name="social-button-facebook-demo" description="Facebook social buttons" />
+
+### Apple social buttons
+
+<ComponentPreview
+  name="social-button-apple-demo"
+  description="Apple social buttons"
+/>
+
+### Social buttons group
+
+<ComponentPreview
+  name="social-button-group-demo"
+  description="Social buttons group."
+/>
+
+### Social buttons group with icon
+
+<ComponentPreview
+  name="social-button-group-icon-demo"
+  description="Social buttons group with icon."
+/>
+
+### Outline social buttons group
+
+<ComponentPreview
+  name="social-button-group-outline-demo"
+  description="Outline social buttons group"
+/>

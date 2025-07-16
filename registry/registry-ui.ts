@@ -610,4 +610,15 @@ export const ui: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "social-button",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-slot", "class-variance-authority"],
+    files: [
+      {
+        path: "ui/social-button.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
 ]

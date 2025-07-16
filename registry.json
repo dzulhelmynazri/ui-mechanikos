@@ -682,6 +682,20 @@
       ]
     },
     {
+      "name": "social-button",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/ui/social-button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "dashboard-01",
       "type": "registry:block",
       "description": "A dashboard with sidebar, charts and data table.",
@@ -5625,6 +5639,94 @@
       "categories": [
         "calendar",
         "date"
+      ]
+    },
+    {
+      "name": "social-button-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/social-button-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "social-button-google-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "social-button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/social-button-google-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "social-button-facebook-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "social-button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/social-button-facebook-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "social-button-apple-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "social-button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/social-button-apple-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "social-button-group-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "social-button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/social-button-group-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "social-button-group-icon-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "social-button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/social-button-group-icon-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "social-button-group-outline-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "social-button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/social-button-group-outline-demo.tsx",
+          "type": "registry:example"
+        }
       ]
     },
     {

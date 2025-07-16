@@ -1631,4 +1631,80 @@ export const examples: Registry["items"] = [
       mobile: "component",
     },
   },
+  {
+    name: "social-button-demo",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/social-button-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "social-button-google-demo",
+    type: "registry:example",
+    registryDependencies: ["social-button"],
+    files: [
+      {
+        path: "examples/social-button-google-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "social-button-facebook-demo",
+    type: "registry:example",
+    registryDependencies: ["social-button"],
+    files: [
+      {
+        path: "examples/social-button-facebook-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "social-button-apple-demo",
+    type: "registry:example",
+    registryDependencies: ["social-button"],
+    files: [
+      {
+        path: "examples/social-button-apple-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "social-button-group-demo",
+    type: "registry:example",
+    registryDependencies: ["social-button"],
+    files: [
+      {
+        path: "examples/social-button-group-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "social-button-group-icon-demo",
+    type: "registry:example",
+    registryDependencies: ["social-button"],
+    files: [
+      {
+        path: "examples/social-button-group-icon-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "social-button-group-outline-demo",
+    type: "registry:example",
+    registryDependencies: ["social-button"],
+    files: [
+      {
+        path: "examples/social-button-group-outline-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ]
