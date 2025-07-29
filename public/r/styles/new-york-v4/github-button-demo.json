@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "github-button-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "github-button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/github-button-demo.tsx",
+      "content": "import { GithubButton } from \"@/registry/new-york-v4/ui/github-button\"\n\nexport default function GithubButtonDemo() {\n  return (\n    <div className=\"space-y-4\">\n      <GithubButton\n        targetStars={1501}\n        label=\"Star on GitHub\"\n        repoUrl=\"https://github.com/dzulhelmynazri/ui-mechanikos\"\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

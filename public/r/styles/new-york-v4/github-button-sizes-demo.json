@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "github-button-sizes-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "github-button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/github-button-sizes-demo.tsx",
+      "content": "import { GithubButton } from '@/registry/new-york-v4/ui/github-button';\n\nexport default function GithubButtonSizesDemo() {\n  return (\n    <div className=\"flex items-center flex-wrap gap-4\">\n      <GithubButton targetStars={1501} label=\"Small\" size=\"sm\" repoUrl=\"https://github.com/dzulhelmynazri/ui-mechanikos\" />\n      <GithubButton targetStars={1501} label=\"Medium\" repoUrl=\"https://github.com/dzulhelmynazri/ui-mechanikos\" />\n      <GithubButton targetStars={1501} label=\"Large\" size=\"lg\" repoUrl=\"https://github.com/dzulhelmynazri/ui-mechanikos\" />\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

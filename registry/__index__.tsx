@@ -448,6 +448,24 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "marquee": {
+    name: "marquee",
+    description: "",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "registry/new-york-v4/ui/marquee.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/marquee.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "menubar": {
     name: "menubar",
     description: "",
@@ -856,6 +874,24 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/social-button.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "github-button": {
+    name: "github-button",
+    description: "",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "registry/new-york-v4/ui/github-button.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/github-button.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),
@@ -4782,6 +4818,60 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "marquee-demo": {
+    name: "marquee-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["marquee","avatar","card"],
+    files: [{
+      path: "registry/new-york-v4/examples/marquee-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marquee-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "marquee-vertical-demo": {
+    name: "marquee-vertical-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["marquee","avatar","card"],
+    files: [{
+      path: "registry/new-york-v4/examples/marquee-vertical-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marquee-vertical-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "marquee-3d-demo": {
+    name: "marquee-3d-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["marquee","avatar","card"],
+    files: [{
+      path: "registry/new-york-v4/examples/marquee-3d-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marquee-3d-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "menubar-demo": {
     name: "menubar-demo",
     description: "",
@@ -6126,6 +6216,78 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/social-button-group-outline-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "github-button-demo": {
+    name: "github-button-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [{
+      path: "registry/new-york-v4/examples/github-button-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/github-button-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "github-button-outline-demo": {
+    name: "github-button-outline-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [{
+      path: "registry/new-york-v4/examples/github-button-outline-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/github-button-outline-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "github-button-separator-demo": {
+    name: "github-button-separator-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [{
+      path: "registry/new-york-v4/examples/github-button-separator-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/github-button-separator-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "github-button-sizes-demo": {
+    name: "github-button-sizes-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [{
+      path: "registry/new-york-v4/examples/github-button-sizes-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/github-button-sizes-demo.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

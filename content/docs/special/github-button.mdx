@@ -1,0 +1,76 @@
+---
+title: Github Button
+description: A github button component with animated stars display effects.
+component: true
+---
+
+<ComponentPreview
+  name="github-button-demo"
+  title="GitHub Star Button"
+  description="A customizable GitHub button component that displays a star icon and star count, allowing users to star your repository directly from your site."
+/>
+
+## Installation
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="github-button" title="components/ui/github-button.tsx" />
+
+</Steps>
+
+## Outiline
+
+### Vertical
+
+<ComponentPreview
+  name="github-button-outline-demo"
+  title="GitHub Star Button"
+  description="A customizable GitHub button component that displays a star icon and star count, allowing users to star your repository directly from your site."
+/>
+
+### Separator
+
+<ComponentPreview
+  name="github-button-separator-demo"
+  title="GitHub Star Button"
+  description="A customizable GitHub button component that displays a star icon and star count, allowing users to star your repository directly from your site."
+/>
+
+### Sizes
+
+<ComponentPreview
+  name="github-button-sizes-demo"
+  title="GitHub Star Button"
+  description="A customizable GitHub button component that displays a star icon and star count, allowing users to star your repository directly from your site."
+/>
+
+### API Reference
+
+This component is built using [Radix UI Slot](https://www.radix-ui.com/primitives/docs/utilities/slot) and [Motion](https://motion.dev/) primitives and includes the following custom props:
+
+### Props
+
+| Name                | Type                       | Default          | Description                                                |
+| ------------------- | -------------------------- | ---------------- | ---------------------------------------------------------- |
+| `variant`           | `'default'` \| `'outline'` | `'default'`      | Style variant of the component.                            |
+| `size`              | `'md'` \| `'sm'` \| `'lg'` | `'md'`           | Size of the component.                                     |
+| `className`         | `string`                   | –                | Custom CSS classes for styling.                            |
+| `roundStars`        | `boolean`                  | `false`          | Rounds the edges of star icons.                            |
+| `fixedWidth`        | `boolean`                  | `true`           | Forces all stars to have equal width.                      |
+| `initialStars`      | `number`                   | `0`              | Number of stars to show initially.                         |
+| `starsClass`        | `string`                   | –                | Custom class for individual star icons.                    |
+| `targetStars`       | `number`                   | –                | Total number of stars to be animated/displayed.            |
+| `separator`         | `boolean`                  | `false`          | Whether to show a separator between stars or elements.     |
+| `showStarIcon`      | `boolean`                  | `true`           | Whether to display the star icon.                          |
+| `animationDuration` | `number`                   | `2`              | Duration of the star animation in seconds.                 |
+| `animationDelay`    | `number`                   | `0`              | Delay before the animation starts in seconds.              |
+| `autoAnimate`       | `boolean`                  | `true`           | Automatically animate stars on render.                     |
+| `showGithubIcon`    | `boolean`                  | `true`           | Whether to show a GitHub icon.                             |
+| `filled`            | `boolean`                  | `false`          | Whether the stars are pre-filled (e.g., for static views). |
+| `repoUrl`           | `string`                   | –                | GitHub repository URL for linking.                         |
+| `label`             | `string`                   | `'Star'`         | Label text shown next to the stars or icon.                |
+| `useInViewTrigger`  | `boolean`                  | `false`          | Triggers animation when the component is in viewport.      |
+| `inViewOptions`     | `UseInViewOptions`         | `{ once: true }` | Options for the in-view observer behavior.                 |
+| `transition`        | `SpringOptions`            | –                | Framer Motion spring transition settings.                  |

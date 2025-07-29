@@ -297,6 +297,16 @@ export const ui: Registry["items"] = [
     ],
   },
   {
+    name: "marquee",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/marquee.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "menubar",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-menubar"],
@@ -617,6 +627,23 @@ export const ui: Registry["items"] = [
     files: [
       {
         path: "ui/social-button.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
+    name: "github-button",
+    type: "registry:ui",
+    dependencies: [
+      "react",
+      "class-variance-authority",
+      "lucide-react",
+      "motion", // or "framer-motion" if you're using the alias
+      "@radix-ui/react-slot",
+    ],
+    files: [
+      {
+        path: "ui/github-button.tsx",
         type: "registry:ui",
       },
     ],

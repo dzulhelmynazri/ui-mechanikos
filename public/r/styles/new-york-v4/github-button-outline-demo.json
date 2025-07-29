@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "github-button-outline-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "github-button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/github-button-outline-demo.tsx",
+      "content": "import { GithubButton } from \"@/registry/new-york-v4/ui/github-button\"\n\nexport default function GithubButtonOutlineDemo() {\n  return (\n    <div className=\"flex flex-wrap gap-4\">\n      <GithubButton\n        initialStars={8889}\n        targetStars={80890}\n        label=\"Github Stars\"\n        roundStars={true}\n        repoUrl=\"https://github.com/dzulhelmynazri/ui-mechanikos\"\n        variant=\"outline\"\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

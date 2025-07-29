@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/new-york-v4/examples/social-button-group-demo.tsx",
-      "content": "import { SocialButton } from \"@/registry/new-york-v4/ui/social-button\";\n \nexport default function SocialButtonGroupBrandDemo() {\n    return (\n        <div className=\"flex w-90 flex-col gap-3\">\n            <SocialButton social=\"google\" variant=\"google\" theme=\"brand\">\n                Sign in with Google\n            </SocialButton>\n            <SocialButton social=\"facebook\" variant=\"facebook\" theme=\"brand\">\n                Sign in with Facebook\n            </SocialButton>\n            <SocialButton social=\"apple\" variant=\"apple\" theme=\"brand\">\n                Sign in with Apple\n            </SocialButton>\n        </div>\n    );\n};\n\n",
+      "content": "import { SocialButton } from \"@/registry/new-york-v4/ui/social-button\"\n\nexport default function SocialButtonGroupBrandDemo() {\n  return (\n    <div className=\"flex w-90 flex-col gap-3\">\n      <SocialButton social=\"google\" variant=\"google\" theme=\"brand\">\n        Sign in with Google\n      </SocialButton>\n      <SocialButton social=\"facebook\" variant=\"facebook\" theme=\"brand\">\n        Sign in with Facebook\n      </SocialButton>\n      <SocialButton social=\"apple\" variant=\"apple\" theme=\"brand\">\n        Sign in with Apple\n      </SocialButton>\n    </div>\n  )\n}\n",
       "type": "registry:example"
     }
   ]

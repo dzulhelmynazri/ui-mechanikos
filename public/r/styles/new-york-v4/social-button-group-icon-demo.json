@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/new-york-v4/examples/social-button-group-icon-demo.tsx",
-      "content": "import { SocialButton } from \"@/registry/new-york-v4/ui/social-button\";\n \nexport default function SocialButtonGroupIconsBrandDemo() {\n    return (\n        <div className=\"grid w-90 grid-cols-3 gap-3\">\n            <SocialButton social=\"google\" variant=\"google\" theme=\"brand\" />\n            <SocialButton social=\"facebook\" variant=\"facebook\" theme=\"brand\" />\n            <SocialButton social=\"apple\" variant=\"apple\" theme=\"brand\" />\n        </div>\n    );\n};",
+      "content": "import { SocialButton } from \"@/registry/new-york-v4/ui/social-button\"\n\nexport default function SocialButtonGroupIconsBrandDemo() {\n  return (\n    <div className=\"grid w-90 grid-cols-3 gap-3\">\n      <SocialButton social=\"google\" variant=\"google\" theme=\"brand\" />\n      <SocialButton social=\"facebook\" variant=\"facebook\" theme=\"brand\" />\n      <SocialButton social=\"apple\" variant=\"apple\" theme=\"brand\" />\n    </div>\n  )\n}\n",
       "type": "registry:example"
     }
   ]

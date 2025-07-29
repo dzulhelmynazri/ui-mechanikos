@@ -842,6 +842,39 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "marquee-demo",
+    type: "registry:example",
+    registryDependencies: ["marquee", "avatar", "card"],
+    files: [
+      {
+        path: "examples/marquee-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "marquee-vertical-demo",
+    type: "registry:example",
+    registryDependencies: ["marquee", "avatar", "card"],
+    files: [
+      {
+        path: "examples/marquee-vertical-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "marquee-3d-demo",
+    type: "registry:example",
+    registryDependencies: ["marquee", "avatar", "card"],
+    files: [
+      {
+        path: "examples/marquee-3d-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "menubar-demo",
     type: "registry:example",
     registryDependencies: ["menubar"],
@@ -1703,6 +1736,50 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/social-button-group-outline-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "github-button-demo",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [
+      {
+        path: "examples/github-button-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "github-button-outline-demo",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [
+      {
+        path: "examples/github-button-outline-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "github-button-separator-demo",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [
+      {
+        path: "examples/github-button-separator-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "github-button-sizes-demo",
+    type: "registry:example",
+    registryDependencies: ["github-button"],
+    files: [
+      {
+        path: "examples/github-button-sizes-demo.tsx",
         type: "registry:example",
       },
     ],

@@ -1,0 +1,81 @@
+---
+title: Marquee
+description: A marquee component continuously scrolls text, images, or videos in an infinite loop, with customizable speed, direction, and responsive design for engaging displays.
+component: true
+---
+
+<ComponentPreview
+  name="marquee-demo"
+  title="Scrolling Marquee Text"
+  description="A horizontally scrolling marquee used to display important announcements, promotions, or updates in a visually engaging way."
+/>
+
+## Installation
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="marquee" title="components/ui/marquee.tsx" />
+
+<Step>Add the following animations to your global CSS file.</Step>
+
+```css showLineNumbers title="app/globals.css"
+@theme inline {
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
+```
+
+</Steps>
+
+## Example
+
+### Vertical
+
+<ComponentPreview
+  name="marquee-vertical-demo"
+  title="Scrolling Marquee Text"
+  description="A vertically scrolling marquee used to display important announcements, promotions, or updates in a visually engaging way."
+/>
+
+### 3D
+
+<ComponentPreview
+  name="marquee-3d-demo"
+  title="Scrolling Marquee Text"
+  description="A 3D scrolling marquee used to display important announcements, promotions, or updates in a visually engaging way."
+/>
+
+### Props
+
+| Name           | Type                               | Default     | Description                                      |
+| -------------- | ---------------------------------- | ----------- | ------------------------------------------------ |
+| `className`    | `string`                           | –           | Custom CSS class for styling the marquee.        |
+| `reverse`      | `boolean`                          | `false`     | Reverses the scrolling direction.                |
+| `pauseOnHover` | `boolean`                          | `false`     | Pauses scrolling when the user hovers over it.   |
+| `children`     | `ReactNode`                        | –           | Content to be displayed inside the marquee.      |
+| `vertical`     | `boolean`                          | `false`     | Enables vertical scrolling direction.            |
+| `repeat`       | `number`                           | `4`         | Number of times the content should repeat.       |
+| `autoFill`     | `boolean`                          | –           | Automatically fills the marquee with content.    |
+| `ariaLabel`    | `string`                           | –           | Accessibility label for the marquee.             |
+| `ariaLive`     | `'off' \| 'polite' \| 'assertive'` | `'off'`     | Defines how screen readers should treat updates. |
+| `ariaRole`     | `string`                           | `'marquee'` | ARIA role attribute for accessibility.           |

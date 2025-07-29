@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "github-button-separator-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "github-button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/github-button-separator-demo.tsx",
+      "content": "import { GithubButton } from \"@/registry/new-york-v4/ui/github-button\"\n\nexport default function GithubButtonSeparatorDemo() {\n  return (\n    <div className=\"flex flex-wrap gap-4\">\n      <GithubButton\n        initialStars={8889}\n        targetStars={80890}\n        separator={true}\n        label=\"\"\n        roundStars={true}\n        repoUrl=\"https://github.com/dzulhelmynazri/ui-mechanikos\"\n        variant=\"outline\"\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

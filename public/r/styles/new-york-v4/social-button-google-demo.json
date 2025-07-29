@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/new-york-v4/examples/social-button-google-demo.tsx",
-      "content": "import { SocialButton } from \"@/registry/new-york-v4/ui/social-button\";\n\nexport default function SocialButtonGoogleDemo() {\n    return (\n        <div className=\"flex flex-col gap-4\">\n            <div className=\"flex gap-8\">\n                <SocialButton social=\"google\" variant=\"google\">\n                    Sign in with Google\n                </SocialButton>\n                <SocialButton social=\"google\" variant=\"google\" />\n            </div>\n            <div className=\"flex gap-8\">\n                <SocialButton social=\"google\" variant=\"google\" theme=\"ghost\">\n                    Sign in with Google\n                </SocialButton>\n                <SocialButton social=\"google\" variant=\"google\" theme=\"ghost\" />\n            </div>\n        </div>\n    );\n};",
+      "content": "import { SocialButton } from \"@/registry/new-york-v4/ui/social-button\"\n\nexport default function SocialButtonGoogleDemo() {\n  return (\n    <div className=\"flex flex-col gap-4\">\n      <div className=\"flex gap-8\">\n        <SocialButton social=\"google\" variant=\"google\">\n          Sign in with Google\n        </SocialButton>\n        <SocialButton social=\"google\" variant=\"google\" />\n      </div>\n      <div className=\"flex gap-8\">\n        <SocialButton social=\"google\" variant=\"google\" theme=\"ghost\">\n          Sign in with Google\n        </SocialButton>\n        <SocialButton social=\"google\" variant=\"google\" theme=\"ghost\" />\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:example"
     }
   ]
