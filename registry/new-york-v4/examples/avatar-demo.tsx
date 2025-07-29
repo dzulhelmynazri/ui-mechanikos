@@ -8,31 +8,43 @@ export default function AvatarDemo() {
   return (
     <div className="flex flex-row flex-wrap items-center gap-12">
       <Avatar>
-        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-        <AvatarFallback>CN</AvatarFallback>
+        <AvatarImage
+          src="https://github.com/dzulhelmynazri.png"
+          alt="@dzulhelmynazri"
+        />
+        <AvatarFallback>DZ</AvatarFallback>
       </Avatar>
       <Avatar className="rounded-lg">
         <AvatarImage
-          src="https://github.com/evilrabbit.png"
-          alt="@evilrabbit"
+          src="https://github.com/izueibrahim.png"
+          alt="@izueibrahim"
         />
-        <AvatarFallback>ER</AvatarFallback>
+        <AvatarFallback>DZ</AvatarFallback>
       </Avatar>
-      <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
+      <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:grayscale">
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-        <Avatar>
-          <AvatarImage src="https://github.com/leerob.png" alt="@leerob" />
-          <AvatarFallback>LR</AvatarFallback>
+          <AvatarImage
+            src="https://github.com/dzulhelmynazri.png"
+            alt="@dzulhelmynazri"
+            className="border-background border-2 hover:z-10"
+          />
+          <AvatarFallback>DZ</AvatarFallback>
         </Avatar>
         <Avatar>
           <AvatarImage
-            src="https://github.com/evilrabbit.png"
-            alt="@evilrabbit"
+            src="https://github.com/mrnonchalantz.png"
+            alt="@mrnonchalantz"
+            className="border-background border-2 hover:z-10"
           />
-          <AvatarFallback>ER</AvatarFallback>
+          <AvatarFallback>MN</AvatarFallback>
+        </Avatar>
+        <Avatar>
+          <AvatarImage
+            src="https://github.com/izueibrahim.png"
+            alt="@izueibrahim"
+            className="border-background border-2 hover:z-10"
+          />
+          <AvatarFallback>IZ</AvatarFallback>
         </Avatar>
       </div>
     </div>

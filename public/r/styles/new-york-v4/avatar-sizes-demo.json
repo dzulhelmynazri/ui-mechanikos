@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-sizes-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/avatar-sizes-demo.tsx",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n  AvatarIndicator,\n  AvatarStatus,\n} from \"@/registry/new-york-v4/ui/avatar\"\n\nexport default function AvatarSizesDemo() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-6\">\n      <Avatar className=\"size-6\">\n        <AvatarImage\n          src=\"https://github.com/dzulhelmynazri.png\"\n          alt=\"@dzulhelmynazri\"\n        />\n        <AvatarFallback>DZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-2 -top-2\">\n          <AvatarStatus variant=\"online\" className=\"size-2\" />\n        </AvatarIndicator>\n      </Avatar>\n      <Avatar className=\"size-8\">\n        <AvatarImage\n          src=\"https://github.com/dzulhelmynazri.png\"\n          alt=\"@dzulhelmynazri\"\n        />\n        <AvatarFallback>DZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-2 -top-2\">\n          <AvatarStatus variant=\"online\" className=\"size-2.5\" />\n        </AvatarIndicator>\n      </Avatar>\n      <Avatar className=\"size-10\">\n        <AvatarImage\n          src=\"https://github.com/izueibrahim.png\"\n          alt=\"@izueibrahim\"\n        />\n        <AvatarFallback>IZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-2 -top-2\">\n          <AvatarStatus variant=\"online\" className=\"size-2.5\" />\n        </AvatarIndicator>\n      </Avatar>\n      <Avatar className=\"size-14\">\n        <AvatarImage\n          src=\"https://github.com/izueibrahim.png\"\n          alt=\"@izueibrahim\"\n        />\n        <AvatarFallback>IZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-1 -top-1\">\n          <AvatarStatus variant=\"online\" className=\"size-3\" />\n        </AvatarIndicator>\n      </Avatar>\n      <Avatar className=\"size-20\">\n        <AvatarImage\n          src=\"https://github.com/izueibrahim.png\"\n          alt=\"@izueibrahim\"\n        />\n        <AvatarFallback>IZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-px -top-px\">\n          <AvatarStatus variant=\"online\" className=\"size-3\" />\n        </AvatarIndicator>\n      </Avatar>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

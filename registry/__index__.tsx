@@ -6294,6 +6294,132 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "avatar-fallback-demo": {
+    name: "avatar-fallback-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "registry/new-york-v4/examples/avatar-fallback-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-fallback-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "avatar-indicator-demo": {
+    name: "avatar-indicator-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "registry/new-york-v4/examples/avatar-indicator-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-indicator-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "avatar-status-demo": {
+    name: "avatar-status-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "registry/new-york-v4/examples/avatar-status-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-status-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "avatar-bagde-demo": {
+    name: "avatar-bagde-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "registry/new-york-v4/examples/avatar-bagde-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-bagde-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "avatar-sizes-demo": {
+    name: "avatar-sizes-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "registry/new-york-v4/examples/avatar-sizes-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-sizes-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "avatar-group-demo": {
+    name: "avatar-group-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "registry/new-york-v4/examples/avatar-group-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-group-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "avatar-users-demo": {
+    name: "avatar-users-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "registry/new-york-v4/examples/avatar-users-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-users-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "sidebar-demo": {
     name: "sidebar-demo",
     description: "",

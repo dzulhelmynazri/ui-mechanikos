@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-fallback-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/avatar-fallback-demo.tsx",
+      "content": "import { User } from \"lucide-react\"\n\nimport { Avatar, AvatarFallback } from \"@/registry/new-york-v4/ui/avatar\"\n\nexport default function AvatarDemo() {\n  return (\n    <div className=\"flex gap-6\">\n      <Avatar>\n        <AvatarFallback>DZ</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarFallback className=\"text-destructive bg-destructive/10\">\n          IZ\n        </AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarFallback className=\"text-primary bg-primary/10\">\n          <User className=\"size-4\" />\n        </AvatarFallback>\n      </Avatar>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

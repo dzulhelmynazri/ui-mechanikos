@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-status-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/avatar-status-demo.tsx",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n  AvatarIndicator,\n  AvatarStatus,\n} from \"@/registry/new-york-v4/ui/avatar\"\n\nexport default function AvatarStatusDemo() {\n  return (\n    <div className=\"flex flex-wrap gap-6\">\n      <Avatar>\n        <AvatarImage\n          src=\"https://github.com/dzulhelmynazri.png\"\n          alt=\"@dzulhelmynazri\"\n        />\n        <AvatarFallback>DZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-1.5 -top-1.5\">\n          <AvatarStatus variant=\"online\" className=\"size-2.5\" />\n        </AvatarIndicator>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://github.com/izueibrahim.png\"\n          alt=\"@izueibrahim\"\n        />\n        <AvatarFallback>IZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-1.5 -top-1.5\">\n          <AvatarStatus variant=\"offline\" className=\"size-2.5\" />\n        </AvatarIndicator>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://github.com/dzulhelmynazri.png\"\n          alt=\"@dzulhelmynazri\"\n        />\n        <AvatarFallback>DZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-1.5 -bottom-1.5\">\n          <AvatarStatus variant=\"busy\" className=\"size-2.5\" />\n        </AvatarIndicator>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://github.com/izueibrahim.png\"\n          alt=\"@izueibrahim\"\n        />\n        <AvatarFallback>IZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-1.5 -bottom-1.5\">\n          <AvatarStatus variant=\"away\" className=\"size-2.5\" />\n        </AvatarIndicator>\n      </Avatar>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

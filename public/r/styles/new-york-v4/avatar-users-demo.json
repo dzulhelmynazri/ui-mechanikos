@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-users-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/avatar-users-demo.tsx",
+      "content": "import { Avatar, AvatarFallback, AvatarImage } from '@/registry/new-york-v4/ui/avatar';\n\nexport default function AvatarUsersDemo() {\n  return (\n    <div className=\"flex items-center rounded-full p-0.5 gap-1.5 border border-border shadow-sm shadow-black/5\">\n      <div className=\"flex -space-x-1\">\n        <Avatar className=\"size-7\">\n          <AvatarImage src=\"https://github.com/dzulhelmynazri.png\" alt=\"@dzulhelmynazri\" className=\"border-2 border-background hover:z-10\" />\n          <AvatarFallback>DZ</AvatarFallback>\n        </Avatar>\n        <Avatar className=\"size-7\">\n          <AvatarImage src=\"https://github.com/izueibrahim.png\" alt=\"@izueibrahim\" className=\"border-2 border-background hover:z-10\" />\n          <AvatarFallback>IZ</AvatarFallback>\n        </Avatar>\n        <Avatar className=\"size-7\">\n          <AvatarImage src=\"https://github.com/izueibrahim.png\" alt=\"@izueibrahim\" className=\"border-2 border-background hover:z-10\" />\n          <AvatarFallback>IZ</AvatarFallback>\n        </Avatar>\n        <Avatar className=\"size-7\">\n          <AvatarImage src=\"https://github.com/izueibrahim.png\" alt=\"@izueibrahim\" className=\"border-2 border-background hover:z-10\" />\n          <AvatarFallback>IZ</AvatarFallback>\n        </Avatar>\n      </div>\n\n      <p className=\"text-xs text-muted-foreground me-1.5\">\n        Trusted by <span className=\"font-semibold text-foreground\">100K+</span> useers.\n      </p>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

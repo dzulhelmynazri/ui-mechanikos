@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-bagde-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/avatar-bagde-demo.tsx",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n  AvatarIndicator,\n} from \"@/registry/new-york-v4/ui/avatar\"\nimport { Badge } from \"@/registry/new-york-v4/ui/badge\"\n\nexport default function AvatarBagdeDemo() {\n  return (\n    <div className=\"flex flex-wrap gap-6\">\n      <Avatar>\n        <AvatarImage\n          className=\"rounded-lg\"\n          src=\"https://github.com/dzulhelmynazri.png\"\n          alt=\"@dzulhelmynazri\"\n        />\n        <AvatarFallback>DZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-2 -top-2\">\n          <Badge size=\"xs\" shape=\"circle\" className=\"border-background border\">\n            6\n          </Badge>\n        </AvatarIndicator>\n      </Avatar>\n\n      <Avatar>\n        <AvatarImage\n          className=\"rounded-lg\"\n          src=\"https://github.com/izueibrahim.png\"\n          alt=\"@izueibrahim\"\n        />\n        <AvatarFallback>IZ</AvatarFallback>\n        <AvatarIndicator className=\"-end-2 -bottom-2\">\n          <Badge\n            variant=\"destructive\"\n            size=\"xs\"\n            shape=\"circle\"\n            className=\"border-background border\"\n          >\n            3\n          </Badge>\n        </AvatarIndicator>\n      </Avatar>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

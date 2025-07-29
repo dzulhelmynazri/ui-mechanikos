@@ -1784,4 +1784,81 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "avatar-fallback-demo",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-fallback-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "avatar-indicator-demo",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-indicator-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "avatar-status-demo",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-status-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "avatar-bagde-demo",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-bagde-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "avatar-sizes-demo",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-sizes-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "avatar-group-demo",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-group-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "avatar-users-demo",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-users-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ]
