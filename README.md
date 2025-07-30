@@ -8,7 +8,7 @@ A UI project powered by Next.js + Radix UI + TailwindCSS. This guide helps you g
 
 ```bash
 git clone https://git.mechanikos.com/ui-mechanikos
-cd ui-mech
+cd ui-mechanikos
 ```
 
 ### 2. Install dependencies
