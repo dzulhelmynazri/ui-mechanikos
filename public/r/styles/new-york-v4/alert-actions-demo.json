@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-actions-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/alert-actions-demo.tsx",
+      "content": "import { Alert, AlertContent, AlertDescription, AlertIcon, AlertTitle } from '@/registry/new-york-v4/ui/alert';\nimport { Button } from '@/registry/new-york-v4/ui/button';\nimport { Bell } from 'lucide-react';\n\nexport default function AlertActionsDemo() {\n  return (\n    <div className=\"flex flex-col items-center w-full lg:max-w-[75%] gap-6\">\n      <Alert variant=\"primary\" close={false}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertContent>\n          <AlertTitle>Example Alert Title</AlertTitle>\n          <AlertDescription>\n            <p>\n              Insert the alert description here. This is an example of a two-line message for better visual clarity.\n            </p>\n            <div className=\"space-x-3.5\">\n              <Button variant=\"inverse\" mode=\"link\" underlined=\"solid\" size=\"md\">\n                Upgrade\n              </Button>\n              <Button variant=\"inverse\" mode=\"link\" underline=\"solid\" size=\"md\">\n                Dismiss\n              </Button>\n            </div>\n          </AlertDescription>\n        </AlertContent>\n      </Alert>\n      <Alert variant=\"destructive\" appearance=\"light\" close={false}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertContent>\n          <AlertTitle>Example Alert Title</AlertTitle>\n          <AlertDescription>\n            <p>\n              Insert the alert description here. This is an example of a two-line message for better visual clarity.\n            </p>\n            <div className=\"space-x-3.5\">\n              <Button variant=\"foreground\" mode=\"link\" underlined=\"solid\" size=\"md\">\n                Upgrade\n              </Button>\n              <Button variant=\"foreground\" mode=\"link\" underline=\"solid\" size=\"md\">\n                Dismiss\n              </Button>\n            </div>\n          </AlertDescription>\n        </AlertContent>\n      </Alert>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

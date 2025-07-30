@@ -27,7 +27,7 @@ export function SiteHeader() {
             items={siteConfig.navItems}
             className="flex lg:hidden"
           />
-          <Button asChild variant="ghost" className="flex">
+          <Button asChild variant="inverse" className="flex">
             <Link href="/">
               <Icons.logo className="size-6" />
               <span className="sr-only">{siteConfig.name}</span>

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-sizes-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/alert-sizes-demo.tsx",
+      "content": "import { Bell } from \"lucide-react\"\n\nimport { Alert, AlertIcon, AlertTitle } from \"@/registry/new-york-v4/ui/alert\"\n\nexport default function AlertSizesDemo() {\n  return (\n    <div className=\"flex w-full flex-col items-center gap-6 lg:max-w-[75%]\">\n      <Alert variant=\"primary\" appearance=\"outline\" size=\"sm\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a small size alert</AlertTitle>\n      </Alert>\n      <Alert variant=\"primary\" appearance=\"outline\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a medium size alert</AlertTitle>\n      </Alert>\n      <Alert variant=\"primary\" appearance=\"outline\" size=\"lg\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a large size alert</AlertTitle>\n      </Alert>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

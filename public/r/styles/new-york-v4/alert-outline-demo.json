@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-outline-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/alert-outline-demo.tsx",
+      "content": "import { Bell, TriangleAlert } from \"lucide-react\"\n\nimport { Alert, AlertIcon, AlertTitle } from \"@/registry/new-york-v4/ui/alert\"\n\nexport default function AlertOutlineDemo() {\n  return (\n    <div className=\"flex w-full flex-col items-center gap-6 lg:max-w-[75%]\">\n      <Alert appearance=\"outline\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a default alert</AlertTitle>\n      </Alert>\n\n      <Alert variant=\"success\" appearance=\"outline\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a success alert</AlertTitle>\n      </Alert>\n\n      <Alert variant=\"destructive\" appearance=\"outline\" close={true}>\n        <AlertIcon>\n          <TriangleAlert />\n        </AlertIcon>\n        <AlertTitle>This is a destructive alert</AlertTitle>\n      </Alert>\n\n      <Alert variant=\"info\" appearance=\"outline\" close={true}>\n        <AlertIcon>\n          <TriangleAlert />\n        </AlertIcon>\n        <AlertTitle>This is an info alert</AlertTitle>\n      </Alert>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -6420,6 +6420,132 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "alert-solid-demo": {
+    name: "alert-solid-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [{
+      path: "registry/new-york-v4/examples/alert-solid-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-solid-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "alert-mono-demo": {
+    name: "alert-mono-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [{
+      path: "registry/new-york-v4/examples/alert-mono-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-mono-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "alert-outline-demo": {
+    name: "alert-outline-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [{
+      path: "registry/new-york-v4/examples/alert-outline-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-outline-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "alert-light-demo": {
+    name: "alert-light-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [{
+      path: "registry/new-york-v4/examples/alert-light-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-light-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "alert-sizes-demo": {
+    name: "alert-sizes-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [{
+      path: "registry/new-york-v4/examples/alert-sizes-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-sizes-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "alert-extended-demo": {
+    name: "alert-extended-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [{
+      path: "registry/new-york-v4/examples/alert-extended-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-extended-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "alert-actions-demo": {
+    name: "alert-actions-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [{
+      path: "registry/new-york-v4/examples/alert-actions-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-actions-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "sidebar-demo": {
     name: "sidebar-demo",
     description: "",

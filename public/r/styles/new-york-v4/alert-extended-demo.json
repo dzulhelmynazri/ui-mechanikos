@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-extended-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/alert-extended-demo.tsx",
+      "content": "import { Bell } from \"lucide-react\"\n\nimport {\n  Alert,\n  AlertContent,\n  AlertDescription,\n  AlertIcon,\n  AlertTitle,\n} from \"@/registry/new-york-v4/ui/alert\"\n\nexport default function AlertExtendedDemo() {\n  return (\n    <div className=\"flex w-full flex-col items-center gap-6 lg:max-w-[75%]\">\n      <Alert variant=\"info\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertContent>\n          <AlertTitle>Example Alert Title</AlertTitle>\n          <AlertDescription>\n            Insert the alert description here. It would look better as two lines\n            of text.\n          </AlertDescription>\n        </AlertContent>\n      </Alert>\n      <Alert variant=\"destructive\" appearance=\"light\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertContent>\n          <AlertTitle>Example Alert Title</AlertTitle>\n          <AlertDescription>\n            Insert the alert description here. It would look better as two lines\n            of text.\n          </AlertDescription>\n        </AlertContent>\n      </Alert>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

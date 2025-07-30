@@ -1861,4 +1861,81 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "alert-solid-demo",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "examples/alert-solid-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-mono-demo",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "examples/alert-mono-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-outline-demo",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "examples/alert-outline-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-light-demo",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "examples/alert-light-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-sizes-demo",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "examples/alert-sizes-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-extended-demo",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "examples/alert-extended-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-actions-demo",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "examples/alert-actions-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ]

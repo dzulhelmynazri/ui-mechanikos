@@ -22,18 +22,107 @@ component: true
 
 </Steps>
 
-## Usage
+## Examples
 
-```tsx showLineNumbers
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-```
+### Solid
 
-```tsx showLineNumbers
-<Alert variant="default | destructive">
-  <Terminal />
-  <AlertTitle>Heads up!</AlertTitle>
-  <AlertDescription>
-    You can add components and dependencies to your app using the cli.
-  </AlertDescription>
-</Alert>
-```
+<ComponentPreview
+  name="alert-solid-demo"
+  title="An alert with an icon, title and description."
+  description="An alert with an solid, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+
+### Mono
+
+<ComponentPreview
+  name="alert-mono-demo"
+  title="An alert with an icon, title and description."
+  description="An alert with an mono, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+
+### Outline
+
+<ComponentPreview
+  name="alert-outline-demo"
+  title="An alert with an icon, title and description."
+  description="An alert with an outline, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+
+### Light
+
+<ComponentPreview
+  name="alert-light-demo"
+  title="An alert with an icon, title and description."
+  description="An alert with an light, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+
+### Sizes
+
+<ComponentPreview
+  name="alert-sizes-demo"
+  title="An alert with an icon, title and description."
+  description="An alert with an sizes, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+
+### Extended
+
+<ComponentPreview
+  name="alert-extended-demo"
+  title="An alert with an icon, title and description."
+  description="An alert with an extended, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+
+### Actions
+
+<ComponentPreview
+  name="alert-actions-demo"
+  title="An alert with an icon, title and description."
+  description="An alert with an actions, title and description. The title says 'Heads up!' and the description is 'You can add components to your app using the cli.'."
+/>
+
+## Props
+
+### Alert
+
+| Name         | Type                                                                                                | Default     | Description                                                      |
+| ------------ | --------------------------------------------------------------------------------------------------- | ----------- | ---------------------------------------------------------------- |
+| `variant`    | `'default'` \| `'primary'` \| `'destructive'` \| `'success'` \| `'info'` \| `'mono'` \| `'warning'` | `'default'` | Visual style of the component, indicating context or importance. |
+| `appearance` | `'solid'` \| `'outline'` \| `'light'` \| `'stroke'`                                                 | `'solid'`   | Determines the fill style of the component.                      |
+| `size`       | `'xs'` \| `'sm'` \| `'md'`                                                                          | `'md'`      | Size of the component.                                           |
+| `className`  | `string`                                                                                            | –           | Custom CSS class for additional styling.                         |
+| `close`      | `boolean`                                                                                           | `true`      | Whether a close button/icon is shown.                            |
+| `onClose`    | `() => void`                                                                                        | –           | Callback function when the close action is triggered.            |
+
+### AlertTitle
+
+| Name        | Type      | Default | Description                                                    |
+| ----------- | --------- | ------- | -------------------------------------------------------------- |
+| `asChild`   | `boolean` | `false` | Renders the component as a child element (e.g., using `Slot`). |
+| `className` | `string`  | –       | Custom CSS class for additional styling.                       |
+
+### AlertDescription
+
+| Name        | Type      | Default | Description                                                |
+| ----------- | --------- | ------- | ---------------------------------------------------------- |
+| `asChild`   | `boolean` | `false` | Whether to render the component as a child using a `Slot`. |
+| `className` | `string`  | –       | Custom CSS class for additional styling.                   |
+
+### AlertIcon
+
+| Name        | Type                                                                     | Default | Description                                                   |
+| ----------- | ------------------------------------------------------------------------ | ------- | ------------------------------------------------------------- |
+| `variant`   | `'primary'` \| `'destructive'` \| `'success'` \| `'info'` \| `'warning'` | –       | Visual variant of the component to indicate status or intent. |
+| `className` | `string`                                                                 | –       | Custom CSS class for additional styling.                      |
+
+### AlertContent
+
+| Name        | Type     | Default | Description                              |
+| ----------- | -------- | ------- | ---------------------------------------- |
+| `className` | `string` | –       | Custom CSS class for additional styling. |
+
+### AlertToolbar
+
+| Name        | Type                                                                     | Default | Description                                                   |
+| ----------- | ------------------------------------------------------------------------ | ------- | ------------------------------------------------------------- |
+| `variant`   | `'primary'` \| `'destructive'` \| `'success'` \| `'info'` \| `'warning'` | –       | Visual variant of the component to indicate status or intent. |
+| `className` | `string`                                                                 | –       | Custom CSS class for additional styling.                      |

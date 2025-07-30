@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-solid-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/alert-solid-demo.tsx",
+      "content": "import { Bell, TriangleAlert } from \"lucide-react\"\n\nimport {\n  Alert,\n  AlertIcon,\n  AlertTitle,\n  AlertToolbar,\n} from \"@/registry/new-york-v4/ui/alert\"\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function AlertSolidDemo() {\n  return (\n    <div className=\"flex w-full flex-col items-center gap-6 lg:max-w-[75%]\">\n      <Alert variant=\"primary\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a primary alert</AlertTitle>\n        <AlertToolbar>\n          <Button\n            variant=\"inverse\"\n            mode=\"link\"\n            underlined=\"solid\"\n            size=\"sm\"\n            className=\"mt-0.5 flex\"\n          >\n            Upgrade\n          </Button>\n        </AlertToolbar>\n      </Alert>\n\n      <Alert variant=\"success\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a success alert</AlertTitle>\n        <AlertToolbar>\n          <Button\n            variant=\"inverse\"\n            mode=\"link\"\n            underlined=\"solid\"\n            size=\"sm\"\n            className=\"mt-0.5 flex\"\n          >\n            Upgrade\n          </Button>\n        </AlertToolbar>\n      </Alert>\n\n      <Alert variant=\"destructive\" close={true}>\n        <AlertIcon>\n          <Bell />\n        </AlertIcon>\n        <AlertTitle>This is a destructive alert</AlertTitle>\n        <AlertToolbar>\n          <Button\n            variant=\"inverse\"\n            mode=\"link\"\n            underlined=\"solid\"\n            size=\"sm\"\n            className=\"mt-0.5 flex\"\n          >\n            Upgrade\n          </Button>\n        </AlertToolbar>\n      </Alert>\n\n      <Alert variant=\"info\" close={true}>\n        <AlertIcon>\n          <TriangleAlert />\n        </AlertIcon>\n        <AlertTitle>This is an info alert</AlertTitle>\n        <AlertToolbar>\n          <Button\n            variant=\"inverse\"\n            mode=\"link\"\n            underlined=\"solid\"\n            size=\"sm\"\n            className=\"mt-0.5 flex\"\n          >\n            Upgrade\n          </Button>\n        </AlertToolbar>\n      </Alert>\n\n      <Alert variant=\"warning\" close={true}>\n        <AlertIcon>\n          <TriangleAlert />\n        </AlertIcon>\n        <AlertTitle>This is a warning alert</AlertTitle>\n        <AlertToolbar>\n          <Button\n            variant=\"inverse\"\n            mode=\"link\"\n            underlined=\"solid\"\n            size=\"sm\"\n            className=\"mt-0.5 flex\"\n          >\n            Upgrade\n          </Button>\n        </AlertToolbar>\n      </Alert>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}
