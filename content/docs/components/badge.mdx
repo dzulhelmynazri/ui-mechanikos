@@ -25,11 +25,26 @@ component: true
 ## Usage
 
 ```tsx
-import { Badge } from "@/components/ui/badge"
+import {
+  Badge,
+  BadgeButton,
+  BadgeDot,
+  badgeVariants,
+} from "@/components/ui/badge"
 ```
 
 ```tsx
-<Badge variant="default |outline | secondary | destructive">Badge</Badge>
+<Badge
+  variant="primary | secondary | success | warning | info | destructive | outline"
+  appearance="default | light | outline | ghost"
+  size="xs | sm | md | lg"
+  shape="default | circle"
+  disabled
+>
+  <BadgeDot />
+  Completed
+  <BadgeButton>Button</BadgeButton>
+</Badge>
 ```
 
 ### Link
@@ -37,14 +52,17 @@ import { Badge } from "@/components/ui/badge"
 You can use the `asChild` prop to make another component look like a badge. Here's an example of a link that looks like a badge.
 
 ```tsx showLineNumbers
-import { Link } from "next/link"
+import Link from "next/link"
 
-import { Badge } from "@/components/ui/badge"
+import { Badge, BadgeDot } from "@/components/ui/badge"
 
-export function LinkAsBadge() {
+export default function LinkAsBadge() {
   return (
-    <Badge asChild>
-      <Link href="/">Badge</Link>
+    <Badge asChild appearance="light" shape="circle">
+      <Link href="#">
+        <BadgeDot className="bg-primary" />
+        Badge
+      </Link>
     </Badge>
   )
 }
