@@ -46,3 +46,11 @@ next-env.d.ts
 .contentlayer
 .content-collections
 .source
+
+# CLI specific
+/cli/node_modules
+/cli/dist
+/cli/build
+/cli/.env*
+/cli/*.log
+/cli/coverage
