@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/new-york-v4/examples/button-with-icon.tsx",
-      "content": "import { IconGitBranch } from \"@tabler/icons-react\"\n\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonWithIcon() {\n  return (\n    <Button variant=\"outline\" size=\"sm\">\n      <IconGitBranch /> New Branch\n    </Button>\n  )\n}\n",
+      "content": "import { Bell, CalendarCheck, Trash2 } from \"lucide-react\"\n\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonWithIcon() {\n  return (\n    <div className=\"flex items-center gap-4\">\n      <Button variant=\"primary\">\n        <Trash2 /> Primary\n      </Button>\n      <Button variant=\"outline\">\n        <Bell /> Outline\n      </Button>\n      <Button variant=\"ghost\">\n        <CalendarCheck /> Ghost\n      </Button>\n    </div>\n  )\n}\n",
       "type": "registry:example"
     }
   ]

@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/new-york-v4/examples/button-loading.tsx",
-      "content": "import { Loader2Icon } from \"lucide-react\"\n\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonLoading() {\n  return (\n    <Button size=\"sm\" disabled>\n      <Loader2Icon className=\"animate-spin\" />\n      Please wait\n    </Button>\n  )\n}\n",
+      "content": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { LoaderCircleIcon } from \"lucide-react\"\n\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonLoading() {\n  const [isDisabled, setIsDisabled] = useState(false)\n\n  useEffect(() => {\n    // Automatically toggle button state every 4 seconds\n    const interval = setInterval(() => {\n      setIsDisabled((prev) => !prev)\n    }, 1000)\n\n    // Cleanup interval on component unmount\n    return () => clearInterval(interval)\n  }, [])\n\n  return (\n    <div className=\"flex items-center gap-4\">\n      <Button variant=\"primary\" disabled={isDisabled}>\n        {isDisabled ? (\n          <LoaderCircleIcon className=\"size-4 animate-spin\" />\n        ) : null}\n        {isDisabled ? \"Submitting...\" : \"Submit\"}\n      </Button>\n    </div>\n  )\n}\n",
       "type": "registry:example"
     }
   ]

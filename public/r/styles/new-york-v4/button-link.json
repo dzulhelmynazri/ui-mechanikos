@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/new-york-v4/examples/button-link.tsx",
-      "content": "import { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonLink() {\n  return <Button variant=\"link\">Link</Button>\n}\n",
+      "content": "import Link from \"next/link\"\n\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonLink() {\n  return (\n    <div className=\"flex flex-col items-center gap-6\">\n      <Button mode=\"link\" underline=\"solid\" asChild>\n        <Link href=\"#\">Solid</Link>\n      </Button>\n      <Button mode=\"link\" underline=\"dashed\">\n        <Link href=\"#\">Dashed</Link>\n      </Button>\n      <Button mode=\"link\" underlined=\"solid\">\n        <Link href=\"#\">Underlined - Solid</Link>\n      </Button>\n      <Button mode=\"link\" underlined=\"dashed\">\n        <Link href=\"#\">Underlined - Dashed</Link>\n      </Button>\n    </div>\n  )\n}\n",
       "type": "registry:example"
     }
   ]

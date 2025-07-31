@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-bagde",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/button-bagde.tsx",
+      "content": "import { Bell, CircleCheckBig, MailCheck } from \"lucide-react\"\n\nimport { Badge } from \"@/registry/new-york-v4/ui/badge\"\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonBagde() {\n  return (\n    <div className=\"flex flex-col items-center gap-10\">\n      <Button variant=\"outline\" mode=\"icon\" className=\"relative\">\n        <Bell />\n        <span className=\"border-background absolute -end-1 -top-1 size-3 animate-bounce rounded-full border-2 bg-blue-500\" />\n      </Button>\n\n      <Button variant=\"outline\" mode=\"icon\" className=\"relative\">\n        <MailCheck />\n        <Badge\n          variant=\"info\"\n          shape=\"circle\"\n          size=\"sm\"\n          className=\"absolute start-full top-0 -translate-x-1/2 -translate-y-1/2 rtl:translate-x-1/2\"\n        >\n          5\n        </Badge>\n      </Button>\n\n      <Button variant=\"outline\" className=\"relative\">\n        <MailCheck />\n        Messages\n        <Badge\n          variant=\"destructive\"\n          shape=\"circle\"\n          size=\"sm\"\n          className=\"absolute start-full top-0 -translate-x-1/2 -translate-y-1/2 rtl:translate-x-1/2\"\n        >\n          5\n        </Badge>\n      </Button>\n\n      <Button variant=\"outline\">\n        <CircleCheckBig />\n        Notifications\n        <Badge variant=\"info\" shape=\"circle\" size=\"sm\">\n          10+\n        </Badge>\n      </Button>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

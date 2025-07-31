@@ -1,4 +1,5 @@
 import { Activity, X } from "lucide-react"
+
 import { Badge, BadgeButton, BadgeDot } from "@/registry/new-york-v4/ui/badge"
 
 export default function BadgeDemo() {
@@ -10,18 +11,18 @@ export default function BadgeDemo() {
         <Badge variant="destructive">Destructive</Badge>
         <Badge variant="info">Info</Badge>
         <Badge variant="success" appearance="outline">
-              <BadgeDot /> Outline
+          <BadgeDot /> Outline
         </Badge>
       </div>
       <div className="flex w-full flex-wrap gap-2">
         <Badge variant="primary" appearance="light">
-              <Activity /> light
+          <Activity /> light
         </Badge>
         <Badge variant="secondary">
-              Solid
-              <BadgeButton>
-                <X />
-              </BadgeButton>
+          Solid
+          <BadgeButton>
+            <X />
+          </BadgeButton>
         </Badge>
         <Badge variant="info" appearance="outline" shape="circle">
           5
@@ -33,6 +34,6 @@ export default function BadgeDemo() {
           Solid
         </Badge>
       </div>
-  </div>
+    </div>
   )
 }

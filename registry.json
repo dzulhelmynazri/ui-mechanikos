@@ -1,6 +1,6 @@
 {
-  "name": "ui-mechanikos",
-  "homepage": "https://ui-mechanikos.vercel.app",
+  "name": "shadcn/ui",
+  "homepage": "https://ui.shadcn.com",
   "items": [
     {
       "name": "index",
@@ -4001,14 +4001,66 @@
       ]
     },
     {
-      "name": "button-demo",
+      "name": "button-default",
       "type": "registry:example",
       "registryDependencies": [
         "button"
       ],
       "files": [
         {
-          "path": "registry/new-york-v4/examples/button-demo.tsx",
+          "path": "registry/new-york-v4/examples/button-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-mono",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/button-mono.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-bagde",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/button-bagde.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-circle",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/button-circle.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york-v4/examples/button-sizes.tsx",
           "type": "registry:example"
         }
       ]

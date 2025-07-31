@@ -5,7 +5,7 @@ featured: true
 component: true
 ---
 
-<ComponentPreview name="button-demo" description="A button" />
+<ComponentPreview name="button-default" description="A button" />
 
 ## Installation
 
@@ -28,11 +28,24 @@ npm install @radix-ui/react-slot
 ## Usage
 
 ```tsx
-import { Button } from "@/components/ui/button"
+import { Button, ButtonArrow, buttonVariants } from "@/components/ui/button"
 ```
 
 ```tsx
-<Button variant="outline">Button</Button>
+<Button
+  variant="primary | mono | destructive | secondary | outline | dashed | ghost | dim | foreground | inverse"
+  appearance="default | ghost"
+  size="sm | md | lg | icon"
+  shape="default | circle"
+  mode="default | icon | link | input"
+  autoHeight
+  placeholder
+  underline="solid | dashed"
+  underlined="solid | dashed"
+>
+  Custom icon
+  <ButtonArrow icon={ChevronDown} />
+</Button>
 ```
 
 ## Link
@@ -55,13 +68,13 @@ export function LinkAsButton() {
 
 ## Examples
 
-### Default
-
-<ComponentPreview name="button-demo" description="A primary button" />
-
 ### Secondary
 
 <ComponentPreview name="button-secondary" description="A secondary button" />
+
+### Mono
+
+<ComponentPreview name="button-mono" description="A mono button" />
 
 ### Destructive
 
@@ -75,6 +88,13 @@ export function LinkAsButton() {
 <ComponentPreview
   name="button-outline"
   description="A button using the outline variant."
+/>
+
+### Dash
+
+<ComponentPreview
+  name="button-dash"
+  description="A button using the dash variant."
 />
 
 ### Ghost
@@ -91,6 +111,10 @@ export function LinkAsButton() {
   description="A button using the link variant."
 />
 
+### Bagde
+
+<ComponentPreview name="button-bagde" description="An bagde button" />
+
 ### Icon
 
 <ComponentPreview name="button-icon" description="An icon button" />
@@ -104,4 +128,18 @@ export function LinkAsButton() {
 <ComponentPreview
   name="button-loading"
   description="A button with a loading state."
+/>
+
+### Sizes
+
+<ComponentPreview
+  name="button-sizes"
+  description="A button with a sizes state."
+/>
+
+### Circle
+
+<ComponentPreview
+  name="button-circle"
+  description="A button with a circle state."
 />

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-circle",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/button-circle.tsx",
+      "content": "import { CalendarCheck } from \"lucide-react\"\n\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonCircle() {\n  return (\n    <div className=\"flex items-center gap-4\">\n      <Button variant=\"outline\" shape=\"circle\">\n        Circle button\n      </Button>\n      <Button variant=\"outline\" shape=\"circle\" mode=\"icon\">\n        <CalendarCheck />\n      </Button>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

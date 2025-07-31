@@ -178,12 +178,56 @@ export const examples: Registry["items"] = [
     ],
   },
   {
-    name: "button-demo",
+    name: "button-default",
     type: "registry:example",
     registryDependencies: ["button"],
     files: [
       {
-        path: "examples/button-demo.tsx",
+        path: "examples/button-default.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "button-mono",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/button-mono.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "button-bagde",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/button-bagde.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "button-circle",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/button-circle.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "button-sizes",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/button-sizes.tsx",
         type: "registry:example",
       },
     ],

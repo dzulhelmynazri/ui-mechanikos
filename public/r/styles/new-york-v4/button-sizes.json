@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-sizes",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york-v4/examples/button-sizes.tsx",
+      "content": "import { UserPen } from \"lucide-react\"\n\nimport { Button } from \"@/registry/new-york-v4/ui/button\"\n\nexport default function ButtonSizes() {\n  return (\n    <div className=\"flex flex-col items-center justify-center gap-6\">\n      <div className=\"flex items-center gap-4\">\n        <Button variant=\"outline\" size=\"sm\">\n          <UserPen />\n          Small\n        </Button>\n        <Button variant=\"outline\">\n          <UserPen />\n          Medium\n        </Button>\n        <Button variant=\"outline\" size=\"lg\">\n          <UserPen />\n          Xsmall\n        </Button>\n      </div>\n      <div className=\"flex items-center gap-4\">\n        <Button variant=\"outline\" size=\"sm\" mode=\"icon\">\n          <UserPen />\n        </Button>\n        <Button variant=\"outline\" mode=\"icon\">\n          <UserPen />\n        </Button>\n        <Button variant=\"outline\" size=\"lg\" mode=\"icon\">\n          <UserPen />\n        </Button>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}
