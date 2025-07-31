@@ -1,6 +1,6 @@
 {
-  "name": "shadcn/ui",
-  "homepage": "https://ui.shadcn.com",
+  "name": "ui-mechanikos",
+  "homepage": "https://ui-mechanikos.vercel.app",
   "items": [
     {
       "name": "index",
