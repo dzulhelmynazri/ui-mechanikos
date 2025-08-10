@@ -233,6 +233,17 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "button-dash",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/button-dash.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "button-secondary",
     type: "registry:example",
     registryDependencies: ["button"],

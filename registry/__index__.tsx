@@ -3828,6 +3828,24 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "button-dash": {
+    name: "button-dash",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [{
+      path: "registry/new-york-v4/examples/button-dash.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/button-dash.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "button-secondary": {
     name: "button-secondary",
     description: "",
